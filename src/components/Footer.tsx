@@ -1,36 +1,36 @@
 import { Facebook, Instagram, Twitter, Github, Mail, MapPin, Phone } from "lucide-react"
 
 const data = {
-  facebookLink: "https://facebook.com/digitalhub",
-  instaLink: "https://instagram.com/digitalhub",
-  twitterLink: "https://twitter.com/digitalhub",
-  githubLink: "https://github.com/digitalhub",
+  facebookLink: "#",
+  instaLink: "https://instagram.com/evavend",
+  twitterLink: "#",
+  githubLink: "#",
   services: {
-    web: "/web-razrabotka",
-    mobile: "/mobilnye-prilozheniya",
-    design: "/ui-ux-dizajn",
-    marketing: "/digital-marketing",
+    web: "#",
+    mobile: "#",
+    design: "#",
+    marketing: "#",
   },
   about: {
-    story: "/o-nas",
-    team: "/komanda",
-    portfolio: "/portfolio",
-    careers: "/vakansii",
+    story: "#",
+    team: "#",
+    portfolio: "#",
+    careers: "#",
   },
   help: {
-    faqs: "/faq",
-    support: "/podderzhka",
-    blog: "/blog",
+    faqs: "#",
+    support: "#",
+    blog: "#",
   },
   contact: {
-    email: "hello@digitalhub.ru",
-    phone: "+7 (495) 123-45-67",
-    address: "Москва, Россия",
+    email: "evavend@kgeu.ru",
+    phone: "+7 (843) XXX-XX-XX",
+    address: "Казань, Татарстан",
   },
   company: {
-    name: "ДиджиталХаб",
+    name: "EVA Vend",
     description:
-      "Создаём цифровые продукты, которые помогают бизнесу расти. Веб-разработка, мобильные приложения и дизайн под ключ.",
+      "Первая сеть вендинговых аппаратов средств женской гигиены в Татарстане. Работаем 24/7 в вузах, ТЦ и бизнес-центрах Казани.",
   },
 }
 
@@ -42,17 +42,17 @@ const socialLinks = [
 ]
 
 const aboutLinks = [
-  { text: "О нас", href: data.about.story },
+  { text: "О проекте", href: data.about.story },
   { text: "Команда", href: data.about.team },
-  { text: "Портфолио", href: data.about.portfolio },
-  { text: "Вакансии", href: data.about.careers },
+  { text: "Наши локации", href: data.about.portfolio },
+  { text: "Партнёрство", href: data.about.careers },
 ]
 
 const serviceLinks = [
-  { text: "Веб-разработка", href: data.services.web },
-  { text: "Мобильные приложения", href: data.services.mobile },
-  { text: "UI/UX Дизайн", href: data.services.design },
-  { text: "Digital-маркетинг", href: data.services.marketing },
+  { text: "Вузы (КГЭУ, КФУ, КАИ)", href: data.services.web },
+  { text: "ТРЦ «Кольцо», «Южный»", href: data.services.mobile },
+  { text: "Бизнес-центры", href: data.services.design },
+  { text: "Фитнес-клубы", href: data.services.marketing },
 ]
 
 const helpfulLinks = [
@@ -396,7 +396,7 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="brand-logo">
-                <div className="brand-icon">DH</div>
+                <div className="brand-icon">EV</div>
                 <span className="brand-name">{data.company.name}</span>
               </div>
               <p className="brand-description">{data.company.description}</p>
@@ -411,7 +411,7 @@ export default function Footer() {
 
             <div className="footer-links">
               <div className="link-column">
-                <h3>О компании</h3>
+                <h3>О нас</h3>
                 <ul className="link-list">
                   {aboutLinks.map(({ text, href }) => (
                     <li key={text} className="link-item">
@@ -422,7 +422,7 @@ export default function Footer() {
               </div>
 
               <div className="link-column">
-                <h3>Услуги</h3>
+                <h3>Локации</h3>
                 <ul className="link-list">
                   {serviceLinks.map(({ text, href }) => (
                     <li key={text} className="link-item">
@@ -470,7 +470,7 @@ export default function Footer() {
 
           <div className="footer-bottom">
             <p className="copyright">
-              2025 <a href="https://poehali.dev">poehali.dev</a>
+              © 2026 EVA Vend — Студенческий стартап КГЭУ
             </p>
             <div className="footer-legal">
               <a href="/privacy">Политика конфиденциальности</a>
